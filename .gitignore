@@ -1,0 +1,10 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.userprefs
+
+# data files created when the program runs
+bookings.txt
+admin.txt
