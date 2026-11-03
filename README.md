@@ -35,15 +35,13 @@ Calls only go downward: UI -> Logic -> DataAccess -> text file. The Model object
 ```
 HotelManagement4Layers
 |-- Program.cs                 main menu (starting point)
-|-- Person/
-|   `-- PersonModel.cs         base class (Name)
 |-- Admin/
-|   |-- AdminModel.cs          Admin : Person
+|   |-- AdminModel.cs          Admin (name, username, password)
 |   |-- AdminLogic.cs          login rule
 |   |-- AdminDataAccess.cs     reads admin.txt
 |   `-- AdminUI.cs             admin login and admin menu
 |-- Customer/
-|   |-- CustomerModel.cs       Customer : Person
+|   |-- CustomerModel.cs       Customer (name)
 |   `-- CustomerUI.cs          customer menu
 `-- Booking/
     |-- BookingModel.cs        a booking (room, customer, days, rent)
@@ -98,4 +96,4 @@ Or open `HotelManagement.sln` in Visual Studio and press F5.
 
 ## Concepts used
 
-Classes and objects, encapsulation (private fields with properties), inheritance (`: Person`, `: base(...)`), constructors, method overriding (`ToString`), composition (a Booking has a Customer), `List<T>`, file handling (`File`, `Path`), and the 4-layer architecture.
+Classes and objects, encapsulation (private fields with properties), constructors, method overriding (`ToString`), composition (a Booking has a Customer), `List<T>`, file handling (`File`, `Path`), and the 4-layer architecture. There is no inheritance: every class stands on its own.

@@ -1,9 +1,18 @@
 namespace HotelManagement
 {
-    class Customer : Person
+    class Customer
     {
-        public Customer(string name) : base(name)
+        private string name;
+
+        public string Name
         {
+            get { return name; }
+            set { name = value; }
+        }
+
+        public Customer(string name)
+        {
+            this.name = name;
         }
     }
 }
