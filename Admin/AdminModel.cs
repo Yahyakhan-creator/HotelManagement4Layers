@@ -1,9 +1,16 @@
 namespace HotelManagement
 {
-    class Admin : Person
+    class Admin
     {
+        private string name;
         private string username;
         private string password;
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
 
         public string Username
         {
@@ -17,8 +24,9 @@ namespace HotelManagement
             set { password = value; }
         }
 
-        public Admin(string name, string username, string password) : base(name)
+        public Admin(string name, string username, string password)
         {
+            this.name = name;
             this.username = username;
             this.password = password;
         }

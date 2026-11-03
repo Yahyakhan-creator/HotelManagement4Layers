@@ -8,3 +8,5 @@ obj/
 # data files created when the program runs
 bookings.txt
 admin.txt
+config.bat
+node_modules
